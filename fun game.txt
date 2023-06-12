@@ -1,3 +1,5 @@
+'''Run this code at your own risk 
+no rresponsibility is taken by the owner/provider of this code if any damages take place in the victims setup'''
 import random
 import os
 import platform
